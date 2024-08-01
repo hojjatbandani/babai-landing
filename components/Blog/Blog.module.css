@@ -1,0 +1,175 @@
+.blogs {
+    border-radius: 24px;
+    background-color: var(--white);
+    position: relative;
+    padding: 24px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.blogs h6 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-black);
+
+}
+
+.blogs p {
+    font-size: var(--font_16);
+    font-weight: 400;
+    color: var(--text-black);
+    margin-top: 8px;
+    width: 70%;
+}
+
+.blog_info {
+    margin-top: 8px;
+    font-size: var(--font_16);
+    font-weight: 500;
+    text-align: right;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user_info_img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.more {
+    display: block;
+    margin-top: 25px;
+    color: var(--dark-blue);
+    font-size: var(--font_14);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.more:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clipPath='url(%23clip0_3955_15527)'%3E%3Cpath d='M10.2734 5.40289L9.33337 4.46289L5.33337 8.46289L9.33337 12.4629L10.2734 11.5229L7.22004 8.46289L10.2734 5.40289Z' fill='%230057CE'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3955_15527'%3E%3Crect width='16' height='16' fill='white' transform='translate(0 0.462891)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+}
+
+.darkBlog .more:after {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clipPath='url(%23clip0_4076_24579)'%3E%3Cpath d='M10.273 5.40289L9.33301 4.46289L5.33301 8.46289L9.33301 12.4629L10.273 11.5229L7.21967 8.46289L10.273 5.40289Z' fill='%23B1C5FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4076_24579'%3E%3Crect width='16' height='16' fill='white' transform='translate(0 0.462891)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+
+
+.blog_holder {
+    margin-top: 200px;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-auto-rows: 226px;
+    grid-auto-flow: dense;
+    display: grid;
+    margin-bottom: 200px;
+}
+
+.blog_title_holder {
+    background-color: var(--advbg2);
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.blog_title_holder .blog_title {
+    color: var(--advbg2-text);
+    position: relative;
+}
+
+.blog_title_holder a {
+    font-size: var(--font_16);
+    font-weight: 500;
+    color: var(--advbg2-text);
+    border: 1px solid var(--border);
+    padding: 12px;
+    border-radius: 12px;
+    display: block;
+    margin-top: 16px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.blog_title_holder a:hover{
+    transform: scale(0.9);
+}
+
+.blog3 {
+    grid-row: span 2;
+    background-image: url(../../public/images/Element\ 3.png);
+
+}
+
+.blog2 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-image: url(../../public/images/Element\ container.png);
+}
+
+.bg {
+    background-image: url(../../public/images/Element\ container\ \(1\).png);
+}
+
+
+@media screen and (max-width:904px) {
+    .blogs {
+        background-size: 45%;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .blogs {
+        background-size: 65%;
+        padding-bottom: 100px;
+    }
+
+    .blogs p {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 1120px) and (max-width: 1300px) {
+    .blog_holder {
+        grid-auto-rows: 250px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .blog_holder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog_title_holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px 24px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .blog_holder {
+        padding: 0 20px;
+    }
+}

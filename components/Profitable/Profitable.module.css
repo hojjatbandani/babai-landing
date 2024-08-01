@@ -1,0 +1,130 @@
+.profitable_holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 200px;
+}
+
+.profitable_section {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.box {
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 24px;
+    color: var(--text-gray);
+}
+
+.box1,
+.box3 {
+    width: 100%;
+}
+
+.box2 {
+    width: 47%;
+    flex: auto;
+    height: 226px;
+
+}
+
+.box2 .currency_info_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.currency_info_holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency_chart {
+    width: 160px;
+    max-height: 80px;
+}
+
+.currency_chart_holder .percent {
+    color: var(--green);
+    font-size: var(--font_36);
+    font-weight: 450;
+    text-align: left;
+    display: block;
+}
+
+.currency_price {
+    margin-top: 45px;
+}
+
+.currency_price li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.box2 .currency {
+    flex-direction: column;
+    text-align: center;
+}
+
+.box2 .number {
+    text-align: center;
+}
+
+.profitable_banner {
+    background-image: url(../../public/images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    min-height: 300px;
+    height: auto;
+    background-size: 166%;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.profitable_banner_title {
+    text-align: right;
+    color: rgba(5, 33, 0, 1);
+}
+
+.profitable_banner a {
+    color: rgba(5, 33, 0, 1);
+    font-size: var(--font_16);
+    font-weight: 500;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.profitable_banner a:hover {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width:991px) {
+    .d_none {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .profitable_holder {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .profitable_holder {
+        padding: 0 20px;
+    }
+}

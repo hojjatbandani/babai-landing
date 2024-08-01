@@ -1,0 +1,183 @@
+.current_rate_table {
+    margin-top: 30px;
+    width: 100%;
+    border-spacing: 0;
+
+}
+
+.current_rate_table thead {
+    background-color: var(--light-gray);
+}
+
+.current_rate_table thead th {
+    padding: 26px;
+    width: 262px;
+    text-align: center;
+    color: var(--text-black);
+    font-size: var(--font_18);
+    font-weight: 500;
+}
+
+.current_rate_table td {
+    height: 70px;
+    width: 320px;
+    text-align: center;
+    padding: 0 26px;
+    min-width: 200px;
+
+}
+
+.current_rate_table .toman::after,
+.current_rate_table .tether::after {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+
+.current_rate_table .toman::after {
+    content: 'تومان';
+    color: var(--advbg3-text);
+    font-size: 10px;
+    font-weight: 700;
+    background-color: var(--advbg3);
+    display: inline-flex;
+    align-items: center;
+}
+
+.current_rate_table .price span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    justify-content: center;
+    color: var(--text-black);
+    font-size: var(--font_16);
+    font-weight: 500;
+}
+
+.current_rate_table .tether::after {
+    content: '';
+    color: var(--advbg3-text);
+    background-color: rgba(171, 236, 216, 1);
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fillRule='evenodd' clipRule='evenodd' d='M8.77296 7.50137V7.49987C8.69046 7.50587 8.26521 7.53137 7.31646 7.53137C6.55896 7.53137 6.02571 7.50887 5.83821 7.49987V7.50212C2.92221 7.37387 0.745707 6.86612 0.745707 6.25862C0.745707 5.65187 2.92221 5.14412 5.83821 5.01362V6.99662C6.02871 7.01012 6.57471 7.04237 7.32921 7.04237C8.23446 7.04237 8.68821 7.00487 8.77296 6.99737V5.01512C11.683 5.14487 13.8542 5.65262 13.8542 6.25862C13.8542 6.86612 11.683 7.37237 8.77296 7.50137ZM8.77296 4.80887V3.03437H12.8335V0.328369H1.77771V3.03437H5.83821V4.80812C2.53821 4.95962 0.0564575 5.61362 0.0564575 6.39662C0.0564575 7.17962 2.53821 7.83287 5.83821 7.98512V13.6716H8.77296V7.98362C12.0677 7.83212 14.5435 7.17887 14.5435 6.39662C14.5435 5.61437 12.0677 4.96112 8.77296 4.80887Z' fill='%230E7C5A'/%3E%3C/svg%3E%0A");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.upward {
+    color: var(--green);
+}
+
+.downward {
+    color: var(--red);
+}
+
+.current_rate_table thead th:first-child {
+    border-radius: 0 16px 16px 0;
+}
+
+.current_rate_table thead th:last-child {
+    border-radius: 16px 0 0 16px;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: right;
+}
+
+.currency_img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.currency_name {
+    font-size: var(--font_16);
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+.currency_short_name {
+    font-size: var(--font_14);
+    font-weight: 500;
+    color: var(--text-gray);
+}
+
+.chart_holder {
+    height: 70px;
+    padding: 0 60px !important;
+    max-width: 262px;
+}
+
+.bargain {
+    font-size: var(--font_16);
+    font-weight: 500;
+    color: var(--dark-blue);
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-right: auto;
+    display: block;
+    margin-left: 20px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.bargain:hover {
+    transform: scale(0.9);
+}
+
+.current_rate_container {
+    background-color: var(--white);
+    padding: 24px;
+    border-radius: 32px;
+}
+
+.current_rate_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.table_holder {
+    width: 100%;
+    overflow: auto;
+}
+
+.fiat_icon {
+    border-radius: 12px;
+}
+
+@media screen and (max-width:1200px) {
+    .chart_holder {
+        padding: 0 25px !important;
+    }
+}
+
+
+@media screen and (max-width:990px) {
+    .current_rate_header {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .current_rate_header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .current_rate_container {
+        padding: 24px;
+        border-radius: 0;
+    }
+
+}

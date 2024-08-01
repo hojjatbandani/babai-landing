@@ -1,0 +1,143 @@
+.contact_us_banner {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.contact_us_title {
+    color: var(--text-black)
+}
+
+.contact_us_description {
+    font-size: var(--font_18);
+    font-weight: 400;
+    color: var(--text-black);
+    margin: auto;
+    margin-top: 24px;
+    max-width: 920px;
+}
+
+.contact_us_info_sections {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.contact_us_box,
+.map_holder {
+    background-color: var(--white);
+    border-radius: 32px;
+    padding: 24px;
+    width: 50%;
+    flex: auto;
+}
+
+.map_holder {
+    padding: 0;
+    overflow: hidden;
+}
+
+.map_holder img {
+    width: 100%;
+    height: 100%;
+    max-height: 340px;
+    object-fit: cover;
+}
+
+.contact_us_box .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_us_box .detail {
+    font-size: var(--font_16);
+    font-weight: 500;
+    color: var(--dark-blue);
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+}
+
+.contact_us_location_info li .contact_us_location_info_title {
+    font-size: var(--font_20);
+    font-weight: 500;
+    color: var(--text-black);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact_us_location_info_title svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact_us_location_info li .contact_us_location_info_detail {
+    font-size: var(--font_16);
+    font-weight: 400;
+    color: var(--text-black);
+    margin-top: 13px;
+    display: block;
+}
+
+.contact_us_location_info li:last-child {
+    margin-top: 24px;
+}
+
+.contact_us_social_media_holder {
+    margin-top: 24px;
+}
+
+.contact_us_social_media_title {
+    font-size: var(--font_20);
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+    color: var(--text-black);
+}
+
+.social_media {
+    display: flex;
+}
+
+.social_media li a {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:800px) {
+    .flex_co {
+        flex-direction: column;
+    }
+
+    .contact_us_box,
+    .map_holder {
+        width: 100%;
+    }
+
+    .map_holder {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact_us_info_sections {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contact_us_info_sections {
+        padding: 0 20px;
+    }
+}

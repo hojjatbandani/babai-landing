@@ -1,0 +1,49 @@
+.switch_box {
+    background-color: var(--light-gray);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.switch_button {
+    font-size: var(--font_14);
+    font-weight: 500;
+    padding: 13px 16px;
+    border-radius: 8px;
+    color: var(--text-black);
+    border: none;
+    background-color: unset;
+    transition: 0.3s;
+}
+
+.switch_button_active {
+    background-color:var(--switch-active);
+}
+
+@media screen and (max-width:990px) {
+    .switch_box{
+        order: 2;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+  .switch_box{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .switch_button{
+    flex: 1;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+    .switch_box{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+.coins_list_title_holder {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 56px;
+    align-items: center;
+}
+
+.coins_list_title_holder .title {
+    color: var(--text-black);
+}
+
+
+.category_holder {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.button_text {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-size: var(--font_12);
+    color: var(--text-black);
+    font-weight: 500;
+    border-radius: 96px;
+    width: max-content;
+
+}
+
+.button_text:hover {
+    background-color: var(--switch-active);
+}
+
+.button_input {
+    display: none;
+}
+
+.button_input:checked {
+    background-color: var(--dark-blue);
+    color: var(--button-text);
+}
+
+.active .button_text {
+    background-color: var(--dark-blue);
+    color: var(--button-text);
+}
+
+.search_holder .select_box,
+.search_box {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    height: 48px;
+    padding: 13px;
+    width: 240px;
+    background-color: unset;
+}
+
+.select_box {
+    color: var(--text-black);
+    font-size: var(--font_14);
+}
+
+.search_holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+.table_category_item {
+    width: 100%;
+}
+
+.current_rate_holder {
+    margin-top: 24px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .search_holder {
+        flex-direction: column;
+    }
+
+    .search_holder .select_box,
+    .search_box {
+        width: 100%;
+    }
+
+    .coins_list_title_holder {
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .search_box {
+        width: 100%;
+    }
+
+}
